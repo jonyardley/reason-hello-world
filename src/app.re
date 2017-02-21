@@ -1,15 +1,11 @@
 module App = {
   include ReactRe.Component;
   let name = "App";
-  type props = unit;
+  type props = {name: string};
   let render {props, updater} =>
-    <div>
-      <h1> (ReactRe.stringToElement "Hello Reason App!!!") </h1>
-      <h2> (ReactRe.stringToElement "This is quite nice....") </h2>
-      <p> (ReactRe.stringToElement "Now it's time to learn something cool...") </p>
-    </div>;
+    <div> <h1> (ReactRe.stringToElement props.name) </h1> <ItemList /> </div>;
 };
 
 include ReactRe.CreateComponent App;
 
-let createElement = wrapProps ();
+let createElement ::name => wrapProps {name: name};
