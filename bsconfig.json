@@ -1,0 +1,12 @@
+{
+  "name" : "badger-quotes",
+  "ppx-flags": ["reactjs_jsx_ppx"],
+  "bs-dependencies": ["reason-js"],
+  "sources": [
+    "external",
+    {
+      "dir": "src",
+      "type" : "dev"
+    }
+  ],
+}

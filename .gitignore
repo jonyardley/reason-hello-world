@@ -14,3 +14,8 @@ _build/**
 *.opt
 
 node_modules
+_build
+lib
+dist/*
+!dist/index.html
+npm-debug.log

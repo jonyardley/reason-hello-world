@@ -39,17 +39,24 @@
     "top": "eval $(dependencyEnv) && rtop",
     "env": "eval $(dependencyEnv) && env",
     "editor": "eval $(dependencyEnv) && eval $EDITOR",
-    "whereisocamlmerlin": "eval $(dependencyEnv) && which ocamlmerlin-reason"
+    "whereisocamlmerlin": "eval $(dependencyEnv) && which ocamlmerlin-reason",
+    "dev": "bsb -make-world -w & webpack-dev-server"
   },
   "devDependencies": {
     "@opam-alpha/merlin": "^ 2.5.0"
   },
   "dependencies": {
-    "ocamlBetterErrors": "0.1.0",
-    "reason": "^ 1.6.0",
     "@opam-alpha/ocaml": "4.2.3",
+    "bs-platform": "^1.4.3",
     "dependency-env": "^0.1.1",
-    "nopam": "^0.1.0"
+    "nopam": "^0.1.0",
+    "ocamlBetterErrors": "0.1.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "reason": "^ 1.6.0",
+    "reason-js": "0.0.16",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   },
   "engines": {
     "npm": ">=3.10.0"
